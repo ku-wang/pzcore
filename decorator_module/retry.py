@@ -1,9 +1,11 @@
 import time
 import random
+from log_module import log_m
+
+logger = log_m.log_obj()
 
 
 def retry(retry_times=3, wait_time=10):
-
     def decoration_2(func):
         def decoration_1(*args, **kwargs):
             for _retry in range(1, retry_times+1):
@@ -11,10 +13,10 @@ def retry(retry_times=3, wait_time=10):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if _retry == retry_times:
-                        print("{error}, retry times arrived !({tries} / {total_tries})".format(error=e, tries=_retry, total_tries=retry_times))
+                        logger.error("{error}, retry times arrived !({tries} / {total_tries})".format(error=e, tries=_retry, total_tries=retry_times))
                         raise e
                     else:
-                        print('{error}, after {time}s will retry ! ({t} / {total})'.format(error=e, time=wait_time, t=_retry, total=retry_times))
+                        logger.error('{error}, after {time}s will retry ! ({t} / {total})'.format(error=e, time=wait_time, t=_retry, total=retry_times))
                         time.sleep(wait_time)
 
         return decoration_1
@@ -27,4 +29,4 @@ def for_test():
     if r_number < 50:
         raise Exception("The random number is lower than 50 ...")
     else:
-        print('No way, i pass it')
+        logger.info('No way, i pass it')

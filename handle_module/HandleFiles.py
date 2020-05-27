@@ -1,5 +1,8 @@
 import os
 from decorator_module import retry
+from log_module import log_m
+
+logger = log_m.log_obj()
 
 
 @retry.retry(3, 5)
@@ -13,10 +16,10 @@ def read_l(filename):
 
 def read_line(filename='test1'):
     if os.path.exists(filename):
-        print("The {file} has existed ...")
+        logger.info("The {file} has existed ...")
         results = read_l(filename)
     else:
-        print("The {file} not exist, will create it first ...")
+        logger.error("The {file} not exist, will create it first ...")
         f = open(filename, "w")
         f.write("write something to file")
         f.close()
