@@ -1,6 +1,8 @@
 import os
+from decorator_module import retry
 
 
+@retry.retry(3, 5)
 def read_l(filename):
     lines = []
     with open(filename) as file:
@@ -23,5 +25,5 @@ def read_line(filename='test1'):
     return results
 
 
-print(read_line('test1'))
+read_l('ssss')
 
