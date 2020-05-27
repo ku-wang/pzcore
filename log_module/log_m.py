@@ -23,12 +23,12 @@ def log_obj(log_name=1, logger_name='mainModule'):
 
 
 logger = log_obj()
-
-logger.info("creating an instance of subModule.subModuleClass")
-logger.info("calling subModule.subModuleClass.doSomething")
-logger.info("done with  subModule.subModuleClass.doSomething")
-logger.info("calling subModule.some_function")
-logger.info("done with subModule.some_function")
+#
+# logger.info("creating an instance of subModule.subModuleClass")
+# logger.info("calling subModule.subModuleClass.doSomething")
+# logger.info("done with  subModule.subModuleClass.doSomething")
+# logger.info("calling subModule.some_function")
+# logger.info("done with subModule.some_function")
 
 
 class Log_obj(object):

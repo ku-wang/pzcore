@@ -2,7 +2,7 @@ import os
 from decorator_module import retry
 from log_module import log_m
 
-logger = log_m.log_obj()
+logger = log_m.logger
 
 
 @retry.retry(3, 5)
@@ -28,5 +28,6 @@ def read_line(filename='test1'):
     return results
 
 
-read_l('ssss')
+# read_l('ssss')
 
+logger.info('dasdasdas')

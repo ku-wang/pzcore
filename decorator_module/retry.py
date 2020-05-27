@@ -2,7 +2,7 @@ import time
 import random
 from log_module import log_m
 
-logger = log_m.log_obj()
+logger = log_m.logger
 
 
 def retry(retry_times=3, wait_time=10):
@@ -13,10 +13,10 @@ def retry(retry_times=3, wait_time=10):
                     return func(*args, **kwargs)
                 except Exception as e:
                     if _retry == retry_times:
-                        logger.error("{error}, retry times arrived !({tries} / {total_tries})".format(error=e, tries=_retry, total_tries=retry_times))
+                        logger.debug("{error}, retry times arrived !({tries} / {total_tries})".format(error=e, tries=_retry, total_tries=retry_times))
                         raise e
                     else:
-                        logger.error('{error}, after {time}s will retry ! ({t} / {total})'.format(error=e, time=wait_time, t=_retry, total=retry_times))
+                        logger.debug('{error}, after {time}s will retry ! ({t} / {total})'.format(error=e, time=wait_time, t=_retry, total=retry_times))
                         time.sleep(wait_time)
 
         return decoration_1
