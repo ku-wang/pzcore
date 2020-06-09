@@ -18,18 +18,23 @@ from decorator_module import retry
 
 @retry.retry(3, 5)
 def for_te1st(times):
-    time.sleep(times)
+    time.sleep(1)
     print('Done With {time}'.format(time=times))
 
-    if times == 5:
+    if times == 10:
         raise Exception("eorororororor")
 
 
-times = [1, 2, 3, 4, 5]
+times = [1, 2, 3, 4, 5, 6,7,8]
 
-client_pool = ThreadPoolExecutor(max_workers=5)
+client_pool = ThreadPoolExecutor(max_workers=8)
 client_futures = [client_pool.submit(for_te1st, time) for time in times]
 wait(client_futures, return_when=ALL_COMPLETED)
+# pool = ThreadPoolExecutor(max_workers=8)
+# futures = []
+# for i in times:
+#     futures.append(pool.submit(for_te1st, i))
+# pool.shutdown()
 
 print('main')
 
