@@ -4,7 +4,7 @@ from log_module import log_m
 logger = log_m.logger
 
 master = '10.180.116.11'
-bd_ip = '10.180.116.17'
+bd_ip = '10.180.116.19'
 bd_port = '10811'
 
 ssh_obj = ssh_obj.SSHObj(master)
