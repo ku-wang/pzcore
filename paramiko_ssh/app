@@ -1,0 +1,9 @@
+apiVersion: snapshot.storage.k8s.io/v1alpha1
+kind: VolumeSnapshot
+metadata:
+  name: new-snapshot-test-1
+spec:
+  snapshotClassName: csi-ext4-snapshotclass
+  source:
+    name: es-data-store-for-csi-pod-1-0
+    kind: PersistentVolumeClaim

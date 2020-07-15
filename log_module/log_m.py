@@ -1,14 +1,16 @@
 import logging
 
+log_folder = "../logs/1.log"
 
-def log_obj(log_name=1, logger_name='mainModule'):
+
+def log_obj(log_folder1, logger_name='mainModule'):
 
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter(fmt='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                                   datefmt='%Y-%m-%d %H:%M:%S')
 
-    handler = logging.FileHandler('../logs/{name}.log'.format(name=log_name))
+    handler = logging.FileHandler(log_folder1)
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
 
@@ -22,7 +24,7 @@ def log_obj(log_name=1, logger_name='mainModule'):
     return logger
 
 
-logger = log_obj()
+logger = log_obj(log_folder1=log_folder)
 
 
 

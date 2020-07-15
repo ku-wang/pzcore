@@ -1,5 +1,50 @@
 from elasticsearch import Elasticsearch
 
+index_body = {
+            "mappings": {
+                "type_doc_test": {                           #type_doc_test为doc_type
+                    "properties": {
+                        "id": {
+                            "type": "long",
+                            "index": "false"
+                        },
+                        "serial": {
+                            "type": "keyword",  # keyword不会进行分词,text会分词
+                            "index": "false"  # 不建索引
+                        },
+                        "tags": {
+                            "type": "object",
+                            "properties": {
+                                "content": {"type": "keyword", "index": True},
+                                "dominant_color_name": {"type": "keyword", "index": True},
+                                "skill": {"type": "keyword", "index": True},
+                            }
+                        },
+                        "hasTag": {
+                            "type": "long",
+                            "index": True
+                        },
+                        "status": {
+                            "type": "long",
+                            "index": True
+                        },
+                        "createTime": {
+                            "type": "date",
+                            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+                        },
+                        "updateTime": {
+                            "type": "date",
+                            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+                        }
+                    }
+                }
+            }
+        }
+
+doc_body = {
+    "id"
+}
+
 
 class ElasticSearch(object):
     _session = None
@@ -32,7 +77,7 @@ class ElasticSearch(object):
         return self.session.cat.indices()
 
 
-es = ElasticSearch('10.180.128.11', port=31731)
+es = ElasticSearch('10.180.116.11', port=31157)
 
 
 print(es.ping())
