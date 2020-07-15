@@ -44,11 +44,6 @@ class SSHObj(object):
         return results
 
 
-# node = 'node12'
-#
-# # some ready
-
-
 # # initial the ssh
 node1 = "10.180.116.11"
 # ssh1 = SSHObj(ip='10.199.128.100')
@@ -74,10 +69,10 @@ def create_yaml_from_local(resource_location, target_location, ssh_obj):
 
 for loc in locations:
     if loc == "app":
-        target = folder + "/c-snapshot" + "/app.yaml"
+        target = folder + "/c-snapshot/app.yaml"
     if loc == "snapshot":
-        target = folder + "/c-snapshot" + "/generate-snapshot-1.yaml"
+        target = folder + "/c-snapshot/generate-snapshot-1.yaml"
     if loc == "restore":
-        target = folder + "/r-snapshot" + "/restore-snapshot-1.yaml"
+        target = folder + "/r-snapshot/restore-snapshot-1.yaml"
     create_yaml_from_local(loc, target, ssh2)
 
