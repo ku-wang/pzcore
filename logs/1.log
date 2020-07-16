@@ -90,3 +90,90 @@ dd
 2020-07-15 14:58:21 - SSH - DEBUG - Connect to 10.180.116.11
 2020-07-15 14:58:23 - SSH - DEBUG - Run the echo 'apiVersion: v1' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo 'kind: PersistentVolumeClaim' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo 'metadata:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '  name: vbs-ext4-restored-pvc-1' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo 'spec:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '  accessModes:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '    - ReadWriteOnce' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '  storageClassName: csi-ext4-sc-vset1' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '  resources:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '    requests:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '      storage: 2Ti' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '  dataSource:' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '    name: new-snapshot-test-1' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '    kind: VolumeSnapshot' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml;echo '    apiGroup: snapshot.storage.k8s.io' >> /root/2020-07-15-14-58-17/r-snapshot/restore-snapshot-1.yaml; via 10.180.116.11
 2020-07-15 14:58:23 - SSH - DEBUG - Connect to 10.180.116.11
+2020-07-16 11:14:42 - mainModule - INFO - success connect with dplserver
+uuid: 1a83314a-ed16-4fb1-9063-78a9415965d6
+type: CH_TYPE_BD
+up_time: 409(sec)
+total_recv_req_num: 576
+total_handle_req_num: 576
+handling: 0
+total_cntl_read: 18432
+total_data_read: 5599232
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 140
+resp_counter: 140
+
+fio:
+put_req_recv_counter: 103
+put_req_fe_counter: 103
+put_req_be_counter: 103
+get_req_recv_counter: 92
+get_req_fe_counter: 92
+get_req_be_counter: 92
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-07-16 11:14:46 - mainModule - INFO - success connect with dplserver
+uuid: 377c9582-b0e1-44a5-b2d1-ee6471f5bf5d
+type: CH_TYPE_BD
+up_time: 1040(sec)
+total_recv_req_num: 372
+total_handle_req_num: 372
+handling: 0
+total_cntl_read: 11904
+total_data_read: 2289664
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 207
+resp_counter: 207
+
+fio:
+put_req_recv_counter: 112
+put_req_fe_counter: 112
+put_req_be_counter: 112
+get_req_recv_counter: 110
+get_req_fe_counter: 110
+get_req_be_counter: 110
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-07-16 11:16:56 - mainModule - INFO - success connect with dplserver
+uuid: 1713fa19-acba-43f0-b9cf-bd199d5fdbf0
+type: CH_TYPE_BD
+up_time: 1170(sec)
+total_recv_req_num: 347
+total_handle_req_num: 347
+handling: 0
+total_cntl_read: 11104
+total_data_read: 0
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 117
+resp_counter: 117
+
+fio:
+put_req_recv_counter: 0
+put_req_fe_counter: 0
+put_req_be_counter: 0
+get_req_recv_counter: 0
+get_req_fe_counter: 0
+get_req_be_counter: 0
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
