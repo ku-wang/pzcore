@@ -28,6 +28,4 @@ def read_line(filename='test1'):
     return results
 
 
-# read_l('ssss')
 
-logger.info('dasdasdas')

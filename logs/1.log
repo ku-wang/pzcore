@@ -177,3 +177,492 @@ jnl:
 mc_recover_status: Done
 req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
 
+2020-07-17 15:41:27 - mainModule - INFO - dasdasdas
+2020-07-17 15:41:55 - mainModule - INFO - dasdasdas
+2020-08-03 10:16:50 - mainModule - INFO - success connect with dplserver
+uuid: b0b67a14-6aa6-43ef-8eb8-f5b60ef2040e
+type: CH_TYPE_BD
+up_time: 169988(sec)
+total_recv_req_num: 857966
+total_handle_req_num: 857966
+handling: 0
+total_cntl_read: 27454880
+total_data_read: 94030626816
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 237130
+resp_counter: 237130
+
+fio:
+put_req_recv_counter: 223832
+put_req_fe_counter: 223832
+put_req_be_counter: 223832
+get_req_recv_counter: 32179
+get_req_fe_counter: 32179
+get_req_be_counter: 32179
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-08-03 10:16:53 - mainModule - INFO - success connect with dplserver
+uuid: 4e3f3158-7719-4f11-bdd8-e7494bb306f1
+type: CH_TYPE_BD
+up_time: 169690(sec)
+total_recv_req_num: 152591
+total_handle_req_num: 152591
+handling: 0
+total_cntl_read: 4882912
+total_data_read: 17356181504
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 51387
+resp_counter: 51387
+
+fio:
+put_req_recv_counter: 34466
+put_req_fe_counter: 34466
+put_req_be_counter: 34466
+get_req_recv_counter: 850
+get_req_fe_counter: 850
+get_req_be_counter: 850
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-08-03 10:17:13 - mainModule - INFO - success connect with dplserver
+uuid: 805fa3d9-25e5-4344-97a3-3afbe0322728
+type: CH_TYPE_BD
+up_time: 169953(sec)
+total_recv_req_num: 873097
+total_handle_req_num: 873097
+handling: 0
+total_cntl_read: 27939008
+total_data_read: 93875085312
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 241351
+resp_counter: 241351
+
+fio:
+put_req_recv_counter: 228431
+put_req_fe_counter: 228431
+put_req_be_counter: 228431
+get_req_recv_counter: 35896
+get_req_fe_counter: 35896
+get_req_be_counter: 35896
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-08-03 10:17:17 - mainModule - INFO - success connect with dplserver
+uuid: 31b131d0-acff-4d69-a7c7-b285c94fef1d
+type: CH_TYPE_BD
+up_time: 167389(sec)
+total_recv_req_num: 1688078
+total_handle_req_num: 1688078
+handling: 0
+total_cntl_read: 54018336
+total_data_read: 102038941696
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 266862
+resp_counter: 266862
+
+fio:
+put_req_recv_counter: 253592
+put_req_fe_counter: 253592
+put_req_be_counter: 253592
+get_req_recv_counter: 58600
+get_req_fe_counter: 58600
+get_req_be_counter: 58600
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-08-03 10:17:33 - mainModule - INFO - success connect with dplserver
+uuid: 6c8933f6-56fa-4983-a735-1a0943e1b31d
+type: CH_TYPE_BD
+up_time: 169924(sec)
+total_recv_req_num: 842535
+total_handle_req_num: 842535
+handling: 0
+total_cntl_read: 26960704
+total_data_read: 93750063104
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 236038
+resp_counter: 236038
+
+fio:
+put_req_recv_counter: 222748
+put_req_fe_counter: 222748
+put_req_be_counter: 222748
+get_req_recv_counter: 31338
+get_req_fe_counter: 31338
+get_req_be_counter: 31338
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-08-12 16:19:37 - mainModule - DEBUG - Still exist the snapshot content ..., after 3s will retry ! (1 / 3)
+2020-08-12 16:19:42 - mainModule - DEBUG - Still exist the snapshot content ..., after 3s will retry ! (2 / 3)
+2020-08-12 16:19:47 - mainModule - DEBUG - Still exist the snapshot content ..., retry times arrived !(3 / 3)
+2020-08-12 16:20:29 - mainModule - INFO - 
+2020-08-12 16:20:29 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (1 / 3)
+2020-08-12 16:22:16 - mainModule - INFO - 
+2020-08-12 16:22:16 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (1 / 3)
+2020-08-12 16:22:21 - mainModule - INFO - 
+2020-08-12 16:22:21 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (2 / 3)
+2020-08-12 16:22:27 - mainModule - INFO - 
+2020-08-12 16:22:27 - mainModule - DEBUG - Still exist the snapshot content, retry times arrived !(3 / 3)
+2020-08-12 16:26:27 - mainModule - DEBUG - No snapshot content exist ...
+2020-08-12 16:28:03 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h45m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h2m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h13m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h15m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   27m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h35m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h12m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h14m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   152m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h42m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   56m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h36m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h45m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:28:03 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (1 / 3)
+2020-08-12 16:28:08 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h45m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h2m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h13m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h15m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   27m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h35m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h12m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h14m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   153m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h42m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   56m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h36m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h45m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:28:08 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (2 / 3)
+2020-08-12 16:28:13 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h45m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h2m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h13m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h15m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   28m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h35m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h12m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h14m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   153m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h42m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   56m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h36m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h45m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:28:13 - mainModule - DEBUG - Still exist the snapshot content, retry times arrived !(3 / 3)
+2020-08-12 16:29:17 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h46m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h3m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h14m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h16m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   29m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h36m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h13m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h15m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   154m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h43m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   57m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h37m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h46m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:29:17 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (1 / 3)
+2020-08-12 16:29:22 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h46m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h3m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h14m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h16m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   29m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h36m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h13m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h15m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   154m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h43m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   57m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h37m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h47m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:29:22 - mainModule - DEBUG - Still exist the snapshot content, after 3s will retry ! (2 / 3)
+2020-08-12 16:29:27 - mainModule - INFO - NAME                                               AGE
+snapcontent-04239f74-0798-4eb2-a96a-099166fa789f   3h46m
+snapcontent-16c1d773-cff1-4a49-ac58-b3825ec0003f   22h
+snapcontent-1b4888bf-1f48-40af-991c-4c9b980efcb5   15h
+snapcontent-21294ec6-83b0-49e5-b5f6-823e7e8e5cbb   21h
+snapcontent-2194dc0c-75d5-4814-a0a4-9e7529c1dc8d   11h
+snapcontent-2225121e-8e9c-4695-b520-a84e5cc20d41   7h4m
+snapcontent-2445151d-d083-4ea6-b6fe-6d2b6e58d588   21h
+snapcontent-2541a749-c1ea-4795-8559-356e18416fd5   13h
+snapcontent-26464506-f7c1-48f8-aec2-2d3bb9096739   11h
+snapcontent-2714452d-8bc4-4e15-b2e0-702c7fcd94aa   22h
+snapcontent-2d51a9e0-849b-4176-a653-4a9aa2521780   23h
+snapcontent-32deb973-24e0-4eec-aea2-af4121a38e04   14h
+snapcontent-35156b32-ca98-4103-95b0-70bcbbbb8c3c   18h
+snapcontent-3c69098d-03f8-40f1-8f6d-c37877b645ea   8h
+snapcontent-43b33cf6-7fa5-43e1-893a-c0e6bea507c2   6h14m
+snapcontent-443aa512-1021-418d-8ca6-7d7f558bd045   5h16m
+snapcontent-44ac38f1-fca1-4043-8d94-a4aad8d5330b   18h
+snapcontent-4691e98f-7446-4cb1-b7a9-c6cdcc859a09   29m
+snapcontent-46ed4cc5-6389-4c5e-b610-fa834b2c4cc8   19h
+snapcontent-49cd5c97-b6fc-48b2-bdc8-a791401eb5d4   16h
+snapcontent-5c42d42e-2651-4dd6-a2b6-76a30b4921cd   6h36m
+snapcontent-61743e38-91b7-4362-9908-ef994496925d   17h
+snapcontent-64f2c039-fe6f-4ab6-8237-ae54f00fc401   10h
+snapcontent-7002adb7-df8b-47d5-8356-5f91d187be97   19h
+snapcontent-7184eeb4-81a4-4000-9115-7d5b4459d8c0   3h13m
+snapcontent-732211d6-cefc-45f8-9161-12a774b4dba3   22h
+snapcontent-83fff307-fafe-440e-96dd-bc0b2509ea41   15h
+snapcontent-855a19ef-d1bf-499d-b963-ca5895d8c73c   22h
+snapcontent-8b1a6e55-2628-43d9-aa74-dcf6837db12c   12h
+snapcontent-8ed270d5-2884-4d2c-8e98-cc65e4285f60   23h
+snapcontent-9d99ca63-ca26-4a0b-9b2d-1cdb002242d3   13h
+snapcontent-a43fa9c3-7f8e-404f-8180-1ce60aa73e9b   4h15m
+snapcontent-a9673f23-f891-46b9-bc76-8d098b17a51f   17h
+snapcontent-abf4d948-28a0-4f94-b8f7-3e3b0647d459   9h
+snapcontent-b2c87758-312e-4972-817b-1db6a8db7a73   21h
+snapcontent-bbb43b0f-d2f5-45e0-afe4-d3232bcdb922   11h
+snapcontent-cc46f4ca-8b40-4f9d-89fa-b22b95a19df1   19h
+snapcontent-cfd5e87f-136e-4e06-87d7-884a86c736c2   154m
+snapcontent-d360c1e7-cf2c-401a-9879-69d548594120   16h
+snapcontent-d83ebe7f-915b-47cc-af39-fcc9a32efa7e   10h
+snapcontent-dc31d496-836a-4a59-aab6-7a814b3b75ac   12h
+snapcontent-e42d73ea-5983-4e9b-8647-ec5a7cba5897   4h43m
+snapcontent-e5e1b1a4-28c2-42cd-a301-93c0ff0cdefb   58m
+snapcontent-e9175284-8ff5-4bd5-815d-9608bfb7f48b   14h
+snapcontent-eb246c25-f5df-482f-9a4a-3fffe62ecf1d   20h
+snapcontent-ecded68a-3364-4c55-af27-e563c7c5ac54   8h
+snapcontent-ed605ee3-d014-4926-b16b-1b459ded1942   9h
+snapcontent-ed9835a5-d07c-44ee-8247-c3a38414734a   7h37m
+snapcontent-f06e3cca-a1a7-4bfe-a6a7-7ad47fc7ecb8   10h
+snapcontent-f38ca258-f0c2-4b52-9850-56f34b466de6   5h47m
+snapcontent-fcf0f8d6-e5d9-44fb-b35b-e3f6ea190492   20h
+snapcontent-fda8f62e-305c-42bc-894f-8abb321c1e52   21h
+
+2020-08-12 16:29:27 - mainModule - DEBUG - Still exist the snapshot content, retry times arrived !(3 / 3)
