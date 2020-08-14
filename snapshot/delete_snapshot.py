@@ -17,7 +17,7 @@ def del_volumesnapshot(ssh_obj):
     logger.debug('\n' + res)
 
 
-@retry.retry(3, 3)
+@retry.retry(100, 3)
 def check_snapshotcotent_if_exist(ssh_obj):
     cmd = "kubectl get volumesnapshotcontents.snapshot.storage.k8s.io"
 
@@ -31,7 +31,20 @@ def check_snapshotcotent_if_exist(ssh_obj):
         raise Exception("Still exist the snapshot content")
 
 
+def del_snapshot_yaml(ssh_obj, folder):
+    cmd = 'ls {folder}|grep shot|grep -v shot-1.yaml|xargs rm -rf'.format(folder=folder)
+    ssh_obj.run_cmd(cmd)
+
+
 if __name__ == '__main__':
 
     ssh = ssh_obj.SSHObj('10.180.116.11')
+    del_volume(ssh)
+    del_volumesnapshot(ssh)
     check_snapshotcotent_if_exist(ssh)
+
+    folder1 = '/home/kwang/random/c-snapshot/'
+    folder2 = '/home/kwang/random/r-snapshot/'
+    del_snapshot_yaml(ssh, folder1)
+    del_snapshot_yaml(ssh, folder2)
+
