@@ -58,7 +58,15 @@ if __name__ == '__main__':
     s3 = S3obj(end_point, s3_ac_key, s3_se_key)
 
     buckets = s3.list_files_from_bucket("test1")
-
-    c = s3.delete_file("test1", '22222/')
-    print(c)
     print(buckets)
+    cc = []
+    for file in buckets['test1']:
+        if '22222/' in file:
+            cc.append(file)
+    cc.append("22222/")
+    print(cc)
+    for c in cc:
+
+        res = s3.delete_file("test1", c)
+        print(res)
+
