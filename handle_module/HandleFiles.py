@@ -30,10 +30,10 @@ def read_line(filename='test1'):
 
 if __name__ == '__main__':
 
-    with open("stat.1", "r", encoding="utf-8") as f:
+    with open("st2at.log.1", "r", encoding="utf-8") as f:
         lines = f.readlines()
 
-        with open('test_new', 'w', encoding="utf-8") as file:
+        with open('stat.log.1', 'w', encoding="utf-8") as file:
             for line in lines:
                 if 'Linux' in line:
                     continue
@@ -47,7 +47,7 @@ if __name__ == '__main__':
                     new_mins = old.split('时')[-1].split('分')[0]
                     new_s = old.split('分')[-1].split('秒')[0]
                     t = 'AM'
-                    if new_hour in ['01', '03', '04', '05', '06', '07', '08', '09', '10', '11']:
+                    if new_hour in ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11']:
                         nho = new_hour
                     elif new_hour == '00':
                         nho = '12'

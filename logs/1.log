@@ -7943,3 +7943,61 @@ volumesnapshotcontent.snapshot.storage.k8s.io "snapcontent-a2d5c312-021c-4b91-be
 volumesnapshotcontent.snapshot.storage.k8s.io "snapcontent-c7127c22-0b55-4fa8-98d3-143bc80c35f6" deleted
 volumesnapshotcontent.snapshot.storage.k8s.io "snapcontent-ebfc50fa-e312-494d-b243-99e8459a9339" deleted
 
+2020-09-14 09:40:43 - mainModule - INFO - success connect with dplserver
+uuid: 948c4950-3342-452e-9b6b-067047c1219b
+type: CH_TYPE_BD
+up_time: 250597(sec)
+total_recv_req_num: 8096140
+total_handle_req_num: 8096140
+handling: 0
+total_cntl_read: 259075744
+total_data_read: 461104271360
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 3409715
+resp_counter: 3409715
+
+fio:
+put_req_recv_counter: 3449486
+put_req_fe_counter: 3449486
+put_req_be_counter: 3449486
+get_req_recv_counter: 2463860
+get_req_fe_counter: 2463860
+get_req_be_counter: 2463860
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
+2020-09-14 09:40:46 - mainModule - INFO - success connect with dplserver
+uuid: 80c3e788-86ec-49dc-a77e-c201a6826dd0
+type: CH_TYPE_BD
+up_time: 250133(sec)
+total_recv_req_num: 161738
+total_handle_req_num: 161738
+handling: 0
+total_cntl_read: 5175552
+total_data_read: 17363361792
+is_use_slave_worker: 1
+is_receiving: 0
+is_stop: 0
+
+fecbd:
+recv_counter: 61880
+resp_counter: 61880
+
+fio:
+put_req_recv_counter: 36929
+put_req_fe_counter: 36929
+put_req_be_counter: 36929
+get_req_recv_counter: 2240
+get_req_fe_counter: 2240
+get_req_be_counter: 2240
+
+jnl:
+mc_recover_status: Done
+req_seq                       req       stop_time(sec)      process_time(sec)   where               dlen      tlen      rlen      
+
