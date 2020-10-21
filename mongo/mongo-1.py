@@ -3,6 +3,7 @@ import mongo.mongo_data_tmp as mongo_data
 import random
 import datetime
 import copy
+from concurrent.futures import ThreadPoolExecutor, ALL_COMPLETED, wait
 
 # template of data -> for test
 data_template = {"loc": '', "name": '', "date": '', "company": "EVI", "department": "QA", "Group": "CORE",
@@ -47,6 +48,8 @@ class Mongo():
             template['date'] = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
             templates.append(template)
 
+        print("Start insert files to [{connection_name}]".
+                  format(num=nums, connection_name=collection_obj.full_name))
         inserted_ids = collection_obj.insert_many(templates)
         if len(inserted_ids.inserted_ids) == nums:
             print("Insert {num} files to [{connection_name}] done ...".
@@ -71,9 +74,15 @@ def run_multi_collctions(ip, port, db_name, collection_name, file_nums=10, collc
 
     db_obj = mongo_obj.get_db_obj(db_name)
 
-    for collection in range(collctions):
-        collection_obj = mongo_obj.get_collection_obj(db_obj, collection_name+str(collection))
-        mongo_obj.insert_data_by_collection(collection_obj, file_nums)
+    # for collection in range(collctions):
+    #     collection_obj = mongo_obj.get_collection_obj(db_obj, collection_name+str(collection))
+    #     mongo_obj.insert_data_by_collection(collection_obj, file_nums)
+
+    client_pool = ThreadPoolExecutor(max_workers=10)
+    client_futures = [client_pool.submit(mongo_obj.insert_data_by_collection,
+                    mongo_obj.get_collection_obj(db_obj, collection_name+str(collection)), file_nums)
+                      for collection in range(collctions)]
+    wait(client_futures, return_when=ALL_COMPLETED)
 
 
 def check_collections():
@@ -90,4 +99,4 @@ if __name__ == '__main__':
     # run(ip, port, database_for_test, cl_for_test, 1000)
     run_multi_collctions(ip, port, database_for_test, cl_for_test, file_nums=1000, collctions=10)
 
-    check_collections()
+    # check_collections()
