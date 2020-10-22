@@ -43,20 +43,34 @@
 #             for_test=folder, l="{", r="}", max=max, min=min)
 #
 # print(cmd)
-import random, datetime, copy
+# import random, datetime, copy
+#
+# templat = {"_id": 0, "loc": '', "name": '', "date": '', "company": "EVI"}
+# locs = ["Shot_Guard", "Point_Guard", "Center", "Small_Forward", "Power_Forward"]
+# nums = 10
+# templates = []
+# for num in range(1, nums):
+#     template = copy.deepcopy(templat)
+#     template['_id'] = num
+#     template['loc'] = random.choice(locs)
+#     # template['name'] = mongo_data.generate_random_string(6)
+#     template['date'] = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+#
+#     print(template)
+#     templates.append(template)
+#
+# print(templates)
 
-templat = {"_id": 0, "loc": '', "name": '', "date": '', "company": "EVI"}
-locs = ["Shot_Guard", "Point_Guard", "Center", "Small_Forward", "Power_Forward"]
-nums = 10
-templates = []
-for num in range(1, nums):
-    template = copy.deepcopy(templat)
-    template['_id'] = num
-    template['loc'] = random.choice(locs)
-    # template['name'] = mongo_data.generate_random_string(6)
-    template['date'] = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 
-    print(template)
-    templates.append(template)
+def split_list(list, seg_length):
+    inlist = list[:]
+    outlist = []
 
-print(templates)
+    while inlist:
+        outlist.append(inlist[0:seg_length])
+        inlist[0:seg_length] = []
+
+    return outlist
+
+a = range(10)
+

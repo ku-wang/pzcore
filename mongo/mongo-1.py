@@ -39,23 +39,48 @@ class Mongo():
     def list_all_collections(self, db_obj):
         return db_obj.list_collection_names()
 
-    def insert_data_by_collection(self, collection_obj, nums):
+    def handle_docs(self, doc_nums):
+
+        def split_list(lists, seg_length):
+            inlist = lists[:]
+            outlist = []
+
+            while inlist:
+                outlist.append(inlist[0:seg_length])
+                inlist[0:seg_length] = []
+            return outlist
+
         templates = []
-        for num in range(1, nums+1):
+        for num in range(1, doc_nums + 1):
             template = copy.deepcopy(data_template)
             template['loc'] = random.choice(locs)
             template['name'] = mongo_data.generate_random_string(6)
             template['date'] = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
             templates.append(template)
 
-        print("Start insert files to [{connection_name}]".
-                  format(num=nums, connection_name=collection_obj.full_name))
-        inserted_ids = collection_obj.insert_many(templates)
-        if len(inserted_ids.inserted_ids) == nums:
-            print("Insert {num} files to [{connection_name}] done ...".
-                  format(num=nums, connection_name=collection_obj.full_name))
+        return split_list(templates, 1000)
+
+    def insert_doc(self, collection_obj, docs):
+
+        print("Start insert {num} documents to [{connection_name}] ...".
+              format(num=len(docs), connection_name=collection_obj.full_name))
+
+        inserted_ids = collection_obj.insert_many(docs)
+
+        if len(inserted_ids.inserted_ids) == len(docs):
+            print("Insert {num} documents to [{connection_name}] done ...".
+                  format(num=len(docs), connection_name=collection_obj.full_name))
         else:
             raise Exception("Insert failed ...")
+
+    def insert_docs_by_collection(self, collection_obj, doc_nums):
+        templates = self.handle_docs(doc_nums)
+
+        insert_client_pool = ThreadPoolExecutor(max_workers=50)
+        insert_client_futures = [insert_client_pool.submit(self.insert_doc, collection_obj, template) for
+                                 template in templates]
+        wait(insert_client_futures, return_when=ALL_COMPLETED)
+
         return True
 
 
@@ -64,25 +89,28 @@ def run(ip, port, db_name, collection_name, nums=10):
 
     db_obj = mongo_obj.get_db_obj(db_name)
     collection_obj = mongo_obj.get_collection_obj(db_obj, collection_name)
-    mongo_obj.insert_data_by_collection(collection_obj, nums)
+    mongo_obj.insert_docs_by_collection(collection_obj, nums)
     for i in collection_obj.find():
         print(i)
 
 
 def run_multi_collctions(ip, port, db_name, collection_name, file_nums=10, collctions=10):
     mongo_obj = Mongo(ip, port)
-
     db_obj = mongo_obj.get_db_obj(db_name)
 
-    # for collection in range(collctions):
-    #     collection_obj = mongo_obj.get_collection_obj(db_obj, collection_name+str(collection))
-    #     mongo_obj.insert_data_by_collection(collection_obj, file_nums)
+    start_time = datetime.datetime.now()
 
-    client_pool = ThreadPoolExecutor(max_workers=10)
-    client_futures = [client_pool.submit(mongo_obj.insert_data_by_collection,
+    client_pool = ThreadPoolExecutor(max_workers=100)
+    client_futures = [client_pool.submit(mongo_obj.insert_docs_by_collection,
                     mongo_obj.get_collection_obj(db_obj, collection_name+str(collection)), file_nums)
                       for collection in range(collctions)]
     wait(client_futures, return_when=ALL_COMPLETED)
+
+    print("Finish insert ...")
+
+    end_time = datetime.datetime.now()
+    take_time = end_time - start_time
+    print('Insert take time: {time}'.format(time=take_time))
 
 
 def check_collections():
@@ -98,5 +126,6 @@ def check_collections():
 if __name__ == '__main__':
     # run(ip, port, database_for_test, cl_for_test, 1000)
     run_multi_collctions(ip, port, database_for_test, cl_for_test, file_nums=1000, collctions=10)
-
+    #
     # check_collections()
+
