@@ -2,13 +2,10 @@ from pymongo import MongoClient
 import mongo.mongo_data_tmp as mongo_data
 import random
 import datetime
-import copy
 from concurrent.futures import ThreadPoolExecutor, ALL_COMPLETED, wait
+import copy
 
 # template of data -> for test
-data_template = {"loc": '', "name": '', "date": '', "company": "EVI", "department": "QA", "Group": "CORE",
-                 "Tester": "HandSomeChris"}
-locs = ["Shot_Guard", "Point_Guard", "Center", "Small_Forward", "Power_Forward"]
 ip = '10.180.116.17'
 port = 30515
 database_for_test = "chris_wang"
@@ -52,11 +49,7 @@ class Mongo():
 
         templates = []
         for num in range(1, doc_nums + 1):
-            template = copy.deepcopy(data_template)
-            template['loc'] = random.choice(locs)
-            template['name'] = mongo_data.generate_random_string(6)
-            template['date'] = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-            templates.append(template)
+            templates.append(mongo_data.generate_doc())
 
         return split_list(templates, 1000)
 
@@ -125,7 +118,9 @@ def check_collections():
 
 if __name__ == '__main__':
     # run(ip, port, database_for_test, cl_for_test, 1000)
-    run_multi_collctions(ip, port, database_for_test, cl_for_test, file_nums=1000, collctions=10)
+    # run_multi_collctions(ip, port, database_for_test, cl_for_test, file_nums=1000, collctions=10)
     #
     # check_collections()
+    print()
+
 
