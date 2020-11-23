@@ -62,15 +62,30 @@
 # print(templates)
 
 
-def split_list(list, seg_length):
-    inlist = list[:]
-    outlist = []
+# def split_list(list, seg_length):
+#     inlist = list[:]
+#     outlist = []
+#
+#     while inlist:
+#         outlist.append(inlist[0:seg_length])
+#         inlist[0:seg_length] = []
+#
+#     return outlist
+#
+# a = range(10)
 
-    while inlist:
-        outlist.append(inlist[0:seg_length])
-        inlist[0:seg_length] = []
+# !/usr/bin/python
 
-    return outlist
 
-a = range(10)
+import re
 
+line = "Cats are smarter than dogs"
+
+matchObj = re.match(r'(.*) are (.*?) .*', line, re.M | re.I)
+
+if matchObj:
+    print("matchObj.group() : ", matchObj.group())
+    print("matchObj.group(1) : ", matchObj.group(1))
+    print("matchObj.group(2) : ", matchObj.group(2))
+else:
+    print("No match!!")

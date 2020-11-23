@@ -7,7 +7,7 @@ import copy
 
 # template of data -> for test
 ip = '10.180.116.17'
-port = 30515
+port = 3119
 database_for_test = "chris_wang"
 cl_for_test = "NBA" + str(random.randint(199999, 999999))
 
@@ -59,6 +59,7 @@ class Mongo():
               format(num=len(docs), connection_name=collection_obj.full_name))
 
         inserted_ids = collection_obj.insert_many(docs)
+        print(inserted_ids)
 
         if len(inserted_ids.inserted_ids) == len(docs):
             print("Insert {num} documents to [{connection_name}] done ...".
@@ -69,7 +70,7 @@ class Mongo():
     def insert_docs_by_collection(self, collection_obj, doc_nums):
         templates = self.handle_docs(doc_nums)
 
-        insert_client_pool = ThreadPoolExecutor(max_workers=50)
+        insert_client_pool = ThreadPoolExecutor(max_workers=20)
         insert_client_futures = [insert_client_pool.submit(self.insert_doc, collection_obj, template) for
                                  template in templates]
         wait(insert_client_futures, return_when=ALL_COMPLETED)
@@ -87,13 +88,13 @@ def run(ip, port, db_name, collection_name, nums=10):
         print(i)
 
 
-def run_multi_collctions(ip, port, db_name, collection_name, file_nums=10, collctions=10):
+def run_multi_collections(ip, port, db_name, collection_name, file_nums=10, collctions=10):
     mongo_obj = Mongo(ip, port)
     db_obj = mongo_obj.get_db_obj(db_name)
 
     start_time = datetime.datetime.now()
 
-    client_pool = ThreadPoolExecutor(max_workers=100)
+    client_pool = ThreadPoolExecutor(max_workers=20)
     client_futures = [client_pool.submit(mongo_obj.insert_docs_by_collection,
                     mongo_obj.get_collection_obj(db_obj, collection_name+str(collection)), file_nums)
                       for collection in range(collctions)]
@@ -117,10 +118,9 @@ def check_collections():
 
 
 if __name__ == '__main__':
-    # run(ip, port, database_for_test, cl_for_test, 1000)
-    # run_multi_collctions(ip, port, database_for_test, cl_for_test, file_nums=1000, collctions=10)
+
+    run_multi_collections(ip, port, database_for_test, cl_for_test, file_nums=10, collctions=1)
     #
     # check_collections()
-    print()
 
 
