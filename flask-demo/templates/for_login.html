@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for-login</title>
+</head>
+<body>
+    <form method="POST">
+        {{ login_form.username.label }}{{ login_form.username }}<br>
+        {{ login_form.password.label }}{{ login_form.password }}<br>
+        {{ login_form.login }} <br>
+
+    {% for mess in get_flashed_messages() %}
+        <br>{{ mess }}
+    {% endfor %}
+    </form>
+</body>
+</html>
