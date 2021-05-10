@@ -10,6 +10,7 @@ app.secret_key = 'test'
 # cases = display_case.display_case()
 user_info = {'user': 'kwang', 'pwd': 'password'}
 
+
 @app.route("/")
 def hello():
     return render_template('base.html')
@@ -46,6 +47,7 @@ def login():
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
+    pas2 = PasswordField('Pas2', validators=[DataRequired(), EqualTo('password', 'Not equal')])
     login = SubmitField('Login')
 
 
@@ -53,16 +55,18 @@ class LoginForm(FlaskForm):
 def for_login():
     login_form = LoginForm()
 
-    if request.method == 'POST':
+    if login_form.validate_on_submit():
+        if {'user': request.form.get('username'), 'pwd': request.form.get('password')} == user_info:
+            return "Login Successfully ~"
+        else:
+            flash("Login Failed")
 
-        if {'user': request.form.get('user'), 'pwd': request.form.get('pwd')} == user_info:
-            return "success"
-        elif not request.form.get('user') or not request.form.get('pwd'):
-            flash("login failed")
     else:
-        flash('')
-
-    return render_template("for_login.html", login_form=login_form, user_info=user_info)
+        if request.method == 'POST':
+            flash('参数有误 ！')
+        else:
+            pass
+    return render_template("for_login.html", login_form=login_form)
 
 
 # @app.route("/")

@@ -6,8 +6,10 @@
 </head>
 <body>
     <form method="POST">
+        {{ login_form.csrf_token() }}
         {{ login_form.username.label }}{{ login_form.username }}<br>
         {{ login_form.password.label }}{{ login_form.password }}<br>
+        {{ login_form.pas2.label }}{{ login_form.pas2 }}<br>
         {{ login_form.login }} <br>
 
     {% for mess in get_flashed_messages() %}
