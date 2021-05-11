@@ -65,7 +65,7 @@ def for_login():
         if request.method == 'POST':
             flash('参数有误 ！')
         else:
-            pass
+            print('ss')
     return render_template("for_login.html", login_form=login_form)
 
 
